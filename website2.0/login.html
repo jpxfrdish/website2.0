@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Create Account</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+       <img src="foundiit1.png" alt="logo">
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <div class="card">
+
+            <h2>Create an Account</h2>
+            <p class="subtitle">
+                Create your account to help make finding lost belongings faster and easier.
+            </p>
+
+            <!-- ✅ ONLY ONE FORM -->
+            <form action="connect.php" method="POST">
+
+                <label>Name</label>
+                <input type="text" name="name" placeholder="e.g John Doe" required>
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="e.g john.doe@gmail.com" required>
+
+                <label>ID Number</label>
+                <input type="text" name="id_number" placeholder="925145" required>
+
+                <label>Status</label>
+                <input type="text" name="status" placeholder="e.g staff" required>
+
+                <label>Contact</label>
+                <input type="text" name="contact" placeholder="e.g 09123456789" required>
+
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Create a strong password" required>
+
+            </form>
+
+            <form action="login1.html">
+                <button type="submit" class="create-btn">Create an Account</button>
+            </form>
+
+            <p class="login-text">
+                Already have an account? <a href="login1.html">Log In</a>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

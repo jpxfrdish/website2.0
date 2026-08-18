@@ -1,0 +1,229 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #ECECEC;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #8B0000;
+    padding: 15px 25px;
+
+    width: 90%;
+    margin: 20px;
+    border-radius: 50px;
+
+    position: sticky;   /* 👈 ADD THIS */
+    top: 10px;          /* 👈 distance from top */
+    z-index: 1000;      /* 👈 stays above everything */
+}
+
+/* LOGO */
+.logo img {
+    width: 120px;
+}
+
+/* NAV LINKS */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* JOIN BUTTON */
+.search-btn {
+    background: #f5e1dc;
+    color: #8B0000 !important;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #8B0000;
+    margin-bottom: 30px;
+}
+
+/* IMAGE WRAPPER */
+.hero-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE */
+.hero-wrapper img {
+    width: 70%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* RED SHAPES */
+.bg-shape {
+    position: absolute;
+    width: 250px;
+    height: 240px;
+    background: #8B0000;
+    z-index: 1;
+}
+
+.bg-shape.left {
+    left: 5%;
+    margin-top: 140px;
+    border-radius: 20px 0 0 20px;
+}
+
+.bg-shape.right {
+    right: 5%;
+    margin-top: 140px;
+    border-radius: 0 20px 20px 0;
+}
+
+/* ========================= */
+/* ABOUT */
+/* ========================= */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.about-container h1 {
+    font-size: 50px;
+    color: #5f1212;
+    margin-bottom: 30px;
+}
+
+.about-box {
+    width: 700px;
+    padding: 30px;
+    border: 2px solid #5f1212;
+    border-radius: 20px;
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-box p {
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #fff;
+}
+/* RED SHAPES */
+.about-box {
+    position: relative;
+    width: 60%;
+    height: 250px;
+    background: #8B0000;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+/* ========================= */
+/* HOW IT WORKS */
+/* ========================= */
+.how-container {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.how-container h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #6b0000;
+    margin-bottom: 50px;
+}
+
+.how-box {
+    position: relative;
+    width: 60%;
+    height: 250px;
+    background: #8B0000;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.step h2 {
+    color: #8b0000;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #6b0000;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.search-container
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+@media (max-width: 900px) {
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container h1,
+    .how-container h1 {
+        font-size: 40px;
+    }
+
+    .about-box {
+        width: 90%;
+    }
+
+    .navbar {
+        width: 95%;
+    }
+}
+
+

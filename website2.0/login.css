@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN LAYOUT */
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.left {
+    flex: 1;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 40px;
+    color: #5f1212;
+}
+
+.logo span {
+    color: orange;
+}
+
+/* RIGHT SIDE */
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+}
+
+/* CARD */
+.card {
+    background-color: #7a0d0d;
+    padding: 30px;
+    border-radius: 30px;
+    width: 380px;
+    color: #d9d9d9;
+}
+
+/* TITLE */
+.card h2 {
+    margin-bottom: 5px;
+}
+
+/* SUBTITLE */
+.subtitle {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #f2dede;
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+/* INPUTS */
+input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #d6d1b1;
+    margin-bottom: 8px;
+}
+
+/* BUTTON */
+button {
+    width: 70%;
+    margin: 15px auto;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ddd;
+    color: #5f1212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f5f5f5;
+}
+
+/* LOGIN TEXT */
+.login-text {
+    text-align: center;
+    font-size: 12px;
+}
+
+.login-text a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}

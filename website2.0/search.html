@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foundiit - Search</title>
+    <link rel="stylesheet" href="searchstyle.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        <img src="foundiit1.png" alt="logo">
+    </div>
+
+     <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="Found.html">Found an Item?</a>
+        <a href="lost.html">Lost an Item?</a>
+    </div>
+</div>
+
+
+<!-- 🔍 SEARCH BAR -->
+<div class="search-container">
+    <input type="text" placeholder="Search for an item by name, description, or location...">
+
+    <div class="filters">
+        <button onclick="filterItems('all')" class="active">All</button>
+        <button onclick="filterItems('lost')">Lost</button>
+        <button onclick="filterItems('found')">Found</button>
+        <button onclick="filterItems('returned')">Returned</button>
+    </div>
+</div>
+
+
+<!-- 🧾 CARDS -->
+<div class="card-container">
+
+    <!-- CARD 1 -->
+    <div class="card" data-type="lost">
+        <img src="fan.png" alt="">
+        <div class="card-body">
+            <h3>Mini fan</h3>
+            <p>Search for an item by name, description, or location.</p>
+
+            <small>📍 CCS Lobby</small><br>
+            <small>📅 05/10/2026</small><br>
+            <small>👤 Reported by Diane Entores</small>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card" data-type="found">
+        <img src="airpod.png" alt="">
+        <div class="card-body">
+            <h3>Airpods</h3>
+            <p>Search for an item by name, description, or location.</p>
+
+            <small>📍 Enrolled Lab Room</small><br>
+            <small>📅 05/15/2026</small><br>
+            <small>👤 Reported by Candice</small>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card" data-type="returned">
+        <img src="wallet.png" alt="">
+        <div class="card-body">
+            <h3>Brown Wallet</h3>
+            <p>Search for an item by name, description, or location.</p>
+
+            <small>📍 ICTC</small><br>
+            <small>📅 05/14/2026</small><br>
+            <small>👤 Reported by Karlo</small>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- 🔥 JAVASCRIPT -->
+<script>
+function filterItems(type) {
+    let cards = document.querySelectorAll('.card');
+    let buttons = document.querySelectorAll('.filters button');
+
+    // remove active class
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // add active to clicked button
+    event.target.classList.add('active');
+
+    // filter cards
+    cards.forEach(card => {
+        if (type === 'all' || card.dataset.type === type) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+</script>
+
+</body>
+</html>
